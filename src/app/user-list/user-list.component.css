@@ -1,0 +1,13 @@
+/* styles.css */
+.bold-text {
+  font-weight: bold;
+}
+.red-text {
+  color: red;
+}
+/* styles.css */
+.italic_bold-text {
+  font-style: italic;
+  font-weight: bold;
+}
+

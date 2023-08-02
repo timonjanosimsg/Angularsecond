@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List of Numbers</title>
+</head>
+<body>
+<h1 class="italic_bold-text">List of Numbers from 1 to 5</h1>
+<ul *ngFor="let item of userList">
+  <li>{{item.id}}</li>
+  <li>{{item.userName}}</li>
+  <li>{{item.email}}</li>
+  <li>{{item.mobileNumber}}</li>
+  <li>{{item.firstName}}</li>
+  <li>{{item.lastName}}</li>
+  <li>{{item.age}}</li>
+</ul>
+<button (click)="triggerEdit()">Press Button!</button>
+<div ng-controller="MyController">
+  Filter by:
+  <input [(ngModel)]="filterValue">
+  <div>Filtered by {{filterValue}}</div>
+</div>
+</body>
+</html>
+

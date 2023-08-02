@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#div1{
+  background-color: aqua;
+}
