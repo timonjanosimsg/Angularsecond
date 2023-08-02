@@ -10,7 +10,6 @@
 <div>
   <button  id="div1"> press me</button>
 </div>
-
-<app-user-list [userList]= "users" (editEventEmiter)="editUser($event)"></app-user-list>
+<app-user-list [userList]= "users" (editEventEmiter)="editUser($event)" (userEmiter)="addCharacter($event)"></app-user-list>
 </body>
 </html>

@@ -23,7 +23,9 @@ export class UserListComponent implements OnInit{
 
   @Input() userList: User[] = [];
 
+
   @Output() editEventEmiter = new EventEmitter<string>();
+  @Output() userEmiter = new EventEmitter<User>();
 
   triggerEdit(): void{
     this.editEventEmiter.emit('Some string');
@@ -35,6 +37,10 @@ export class UserListComponent implements OnInit{
 
   constructor() {
   }
+
+  editUserName(user : User){
+    this.userEmiter.emit(user);
+}
 
 
 }

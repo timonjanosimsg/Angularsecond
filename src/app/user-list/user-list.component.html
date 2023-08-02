@@ -4,15 +4,9 @@
   <title>List of Numbers</title>
 </head>
 <body>
-<h1 class="italic_bold-text">List of Numbers from 1 to 5</h1>
+<h2 class="italic_bold-text">List of Numbers from 1 to 5</h2>
 <ul *ngFor="let item of userList">
-  <li>{{item.id}}</li>
-  <li>{{item.userName}}</li>
-  <li>{{item.email}}</li>
-  <li>{{item.mobileNumber}}</li>
-  <li>{{item.firstName}}</li>
-  <li>{{item.lastName}}</li>
-  <li>{{item.age}}</li>
+  <app-user-info [user]="item" (emiterAddCharacter)="editUserName($event)"></app-user-info>
 </ul>
 <button (click)="triggerEdit()">Press Button!</button>
 <div ng-controller="MyController">
@@ -22,4 +16,4 @@
 </div>
 </body>
 </html>
-
+<!--2-->

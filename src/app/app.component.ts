@@ -36,4 +36,8 @@ export class AppComponent {
   editUser(userString : string){
     window.alert(userString);
   }
+
+  addCharacter(user: User) {
+    this.users.forEach(u => {if(u.id = user.id){u=user}})
+  }
 }
