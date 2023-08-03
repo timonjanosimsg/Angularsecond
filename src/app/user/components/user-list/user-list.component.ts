@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {applyMixins} from "rxjs/internal/util/applyMixins";
 import {filter} from "rxjs";
-import {User} from "../../user";
+import {User} from "../../models/user";
 
 @Component({
   selector: 'app-user-list',
